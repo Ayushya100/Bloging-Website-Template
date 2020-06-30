@@ -1,0 +1,72 @@
+/* Profile Background */
+.banner{
+  background-image: url('../images/background_image23.jpg');
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.banner .profile-pic{
+  width: 15%;
+  height: 50%;
+  margin-top: 187px;
+  margin-left: 650px;
+  border: 5px solid white;
+}
+.banner .content{
+  float: right;
+  color: white;
+  margin-top: 190px;
+}
+.banner .content .socials-one{
+  font-size: 1.5em;
+}
+
+
+/* Edit & Delete option */
+.update{
+  margin-top: 9px;
+  padding-right: 20px;
+  color: rgb(2, 150, 2);
+  font-size: 16px;
+}
+.update:hover{
+  color: rgb(2, 126, 2);
+}
+.delete{
+  color: rgb(255, 23, 23);
+}
+.delete:hover{
+  color: rgb(243, 3, 3);
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+
+/* Create new Blog */
+.Blog-wrapper{
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+.Blog-wrapper .Blog-content{
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.Blog-wrapper .Blog-content .main-form{
+  margin-top: 20px;
+}
+.Blog-wrapper .Blog-content label{
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+}
+.Blog-wrapper .Blog-content input{
+  width: 100%;
+  margin-bottom: 20px;
+  line-height: 30px;
+  padding-left: 10px;
+  border: none;
+  border-bottom: 1px solid rgb(166, 166, 166);
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>MyBlogingSite - Profile</title>
+    <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  </head>
+  <body>
+
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-md" style="background-color: rgb(42, 163, 250);">
+      <div class="container">
+        <!-- NavBar-Left -->
+        <a href="#" class="navbar-brand navmade" style="font-size:25px;">MyBlogingSite</a>
+        <!-- NavBar-Right -->
+        <div class="collapse navbar-collapse float-md-right" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <form class="nav-item" action="index.html" method="post" style="padding-right: 20px;">
+              <input type="text" name="" placeholder="Search Blog..." class="nav-search-bar">
+              <button type="button" name="button" class="nav-search-button"><i class="fas fa-search"></i></button>
+            </form>
+            <li class="nav-item">
+              <a class="nav-link nav-deco" href="post.html" style="padding-right: 20px;">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-deco" href="#" style="padding-right: 20px;">Help</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-deco" href="blogs.html" style="padding-right: 20px;">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-deco" href="login.html">Log Out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Profile -->
+    <div class="container-fluid banner">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-xs-12">
+          <div class="content">
+            <h5>First Name: <span>Ayushya</span></h5>
+            <h5>Last Name: <span>Jaiswal</span></h5>
+            <h5>Email: <span>jaiswalayushya@gmail.com</span></h5>
+            <h5>Userame: <span>shadow</span></h5>
+            <div class="socials-one">
+              <a href="#" style="margin-right: 20px;"><i class="fab fa-linkedin"></i></a>
+              <a href="#" style="margin-right: 20px;"><i class="fab fa-twitter"></i></a>
+              <a href="#" style="margin-right: 20px;"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <img src="images/prof9.jpg" alt="" class="profile-pic">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Profile Settings Navbar -->
+    <nav class="navbar navbar-expand-md" style="background-color: black;">
+      <div class="container">
+        <div class="collapse navbar-collapse float-md-right" id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <a href="profile.html" class="update"><i class="fas fa-edit" style="font-weight: bold;"> Edit Details</i></a>
+            <li class="nav-item">
+              <a class="nav-link nav-deco" href="create_blog.html" style="padding-right: 20px;">Create</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-deco" href="view_all_blogs.html">All Blogs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Profile view -->
+    <div class="auth-content container">
+      <h2 class="form-title">Re-Enter your Details</h2>
+      <form class="register-form" action="register" method="post">
+        <div>
+          <label for="">First Name</label>
+          <input required type="text" name="first_name" class="text-input" placeholder="First Name">
+        </div>
+        <div>
+          <label for="">Last Name</label>
+          <input required type="text" name="last_name" class="text-input" placeholder="Last Name">
+        </div>
+        <div>
+          <label for="">Email</label>
+          <input required type="email" name="email" class="text-input" placeholder="Email">
+        </div>
+        <div>
+          <label for="">Username</label>
+          <input required type="text" name="username" class="text-input" placeholder="Username">
+        </div>
+        <div>
+          <label for="">Password</label>
+          <input required type="password" name="password1" class="text-input" placeholder="Password">
+        </div>
+        <div>
+          <label for="">Confirm Password</label>
+          <input required type="password" name="password2" class="text-input" placeholder="Confirm Password">
+        </div>
+        <div>
+          <label for="">LinkedIn</label>
+          <input type="text" name="linkedin" placeholder="LinkedIn profile Url">
+        </div>
+        <div>
+          <label for="">Twitter</label>
+          <input type="text" name="linkedin" placeholder="Twitter profile Url">
+        </div>
+        <div>
+          <label for="">Facebook</label>
+          <input type="text" name="linkedin" placeholder="Facebook profile Url">
+        </div>
+        <div>
+          <label for="">Instagram</label>
+          <input type="text" name="linkedin" placeholder="Instagram profile Url">
+        </div>
+        <div>
+          <label>Select Profile image:</label>
+          <input type="file" name="image" accept="image/*" class="text-input" style="border: none;">
+        </div>
+        <div>
+          <button type="submit" class="btn btn-primary" name="register-btn" style="width: 100px;">Edit</button>
+          <a href="#" class="delete"><i class="fas fa-trash" style="font-weight: bold; float: right; margin-top: 5px;"> Delete my Account</i></a>
+        </div>
+      </form>
+    </div>
+
+
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer-content container">
+        <div class="footer-section about">
+          <h1 class="logo-text">MyBlogingSite</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
+        </div>
+        <div class="footer-section links">
+          <h2>Quick Links</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu</p>
+        </div>
+        <div class="footer-section contact-form">
+          <h2>Contact Us</h2>
+          <form class="" action="." method="POST">
+            <input type="email" name="email" class="text-input contact-input" placeholder="Your Email Id" style="height: 40px;">
+            <textarea name="message" class="text-input contact-input" placeholder="Enter your Message..." rows="2" cols="20"></textarea>
+            <button type="submit" class="btn btn-primary contact-btn"><i class="fas fa-envelope"></i> Send</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy;2020 Designed by Shadow_Works | Developed by Ayushya Jaiswal
+      </div>
+    </div>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+  </body>
+</html>
